@@ -1,0 +1,6 @@
+body{
+    width: 25em;
+    margin: 2rem auto !important;
+    padding: 4vw 0;
+    box-shadow: 6px 6px 24px grey;
+}

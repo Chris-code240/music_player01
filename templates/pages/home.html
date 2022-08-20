@@ -1,0 +1,68 @@
+{% extends 'layouts/layout.html' %}
+{%block page %}
+{% block class %}
+<link rel="stylesheet" href="static/home.css">
+{%endblock  %}
+<section>
+    <div class="container">
+        <div class="container">
+            <div class="container album d-flex justify-content-center align-items-center">
+                <img id="cover-art" src="static/img/front-splash.jpg" class="img-fluid col-11" alt="">
+        </div>
+            </div>
+        <div class="container">
+            <div class="container">
+                <h3>Not Playing</h3>
+                <audio src="static/music/Hold_Tight___Selena_Gomez___The_Chainsmokers(128kbps).mp3"></audio>
+            </div>
+        </div>
+        <div class="loading-bar container">
+            <div class="container d-flex justify-content-between align-items-center my-4">
+                <progress class="col-12" value="0" min="20" max="100" draggable="false" id="progress-music">
+                </progress>
+                <!-- <audio src="#" controls></audio> -->
+            </div>
+        </div>
+        
+
+        <!-- controls -->
+        <div class="controls container">
+            <div class="container d-flex justify-content-between align-items-center my-4">
+                <div class="backward">
+                    <i class="fa fa-backward control p-2"></i>
+                </div>
+                <div class="play" id="play">
+                    <i class="fa fa-play control p-2"></i>
+                </div>
+                <div class="forward">
+                    <i class="fa fa-forward control p-2"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="volume container">
+            <div class="container d-flex justify-content-between align-items-center my-4">
+                <i class="fa fa-volume-low control p-2" id="low"></i>
+            <progress class="col-10" value="0" max="100" id="progress-volume"></progress>
+            <i class="fa fa-volume-high control p-2" id="high"></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container d-flex justify-content-between align-items-center my-4">
+                
+                    <div class="lyrics">
+                        <i class="fa fa-message"></i>
+                    </div>
+                    <div class="airdrop">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="list">
+                        <i class="fa fa-list"></i>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+*{
+    
+}
+.album{
+    height: 35vh;
+    transition: all 0.3s ease;
+}
+.img-fluid{
+    /* box-shadow: 3px 3px 12px grey; */
+}
+
+.img-fluid:hover{
+    box-shadow: 4px 4px 12px grey;
+}
+.control{
+
+    border-radius: 100%;
+    aspect-ratio: 1;
+}
+.control:active{
+    background-color: rgba(128, 128, 128, 0.493);
+}
